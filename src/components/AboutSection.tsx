@@ -5,7 +5,7 @@ import aboutDoctor from "@/assets/about-doctor.png";
 const stats = [
   { icon: Award, value: "+10", label: "Anos de Experiência" },
   { icon: Heart, value: "+5.000", label: "Pacientes Atendidos" },
-  { icon: Star, value: "4.9", label: "Avaliação Google" },
+  { icon: Star, value: "5", label: "Avaliação Google" },
 ];
 
 const AboutSection = () => {
@@ -47,7 +47,7 @@ const AboutSection = () => {
                 <img
                   src={aboutDoctor}
                   alt="Dra. Jessica Chen"
-                  className="w-full h-[600px] object-cover object-top"
+                  className="w-full h-auto object-cover object-top rounded-3xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 via-transparent to-transparent" />
               </div>

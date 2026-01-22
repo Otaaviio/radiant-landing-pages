@@ -6,19 +6,16 @@ const procedures = [
     icon: Sparkles,
     name: "Harmonização Facial",
     description: "Realce seus traços naturais com técnicas avançadas de harmonização e rejuvenescimento.",
-    price: "A partir de R$890",
   },
   {
     icon: Syringe,
     name: "Bioestimuladores",
     description: "Estimule a produção natural de colágeno para uma pele mais firme e jovem.",
-    price: "A partir de R$1.200",
   },
   {
     icon: Scan,
     name: "Laser & Tecnologia",
     description: "Tratamentos a laser para manchas, cicatrizes e rejuvenescimento avançado.",
-    price: "A partir de R$650",
   },
 ];
 
@@ -102,7 +99,6 @@ const ProceduresSection = () => {
               </p>
               
               <div className="flex items-center justify-between pt-4 border-t border-border">
-                <span className="text-primary font-semibold">{procedure.price}</span>
                 <span className="text-sm text-muted-foreground group-hover:text-primary transition-colors">
                   Saiba mais →
                 </span>

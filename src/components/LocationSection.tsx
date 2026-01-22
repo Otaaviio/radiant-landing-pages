@@ -38,7 +38,7 @@ const LocationSection = () => {
             }`}
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.8!2d-46.2!3d-23.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMwJzAwLjAiUyA0NsKwMTInMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1600000000000!5m2!1spt-BR!2sbr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14634.283540245207!2d-46.170312806945795!3d-23.51196095818028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdd98e9558c977%3A0x6d494abb60e882cc!2sDra.%20J%C3%A9ssica%20Chen%20-%20Dermatologista%20Mogi%20das%20Cruzes!5e0!3m2!1spt-BR!2sbr!4v1769117320254!5m2!1spt-BR!2sbr"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -77,7 +77,6 @@ const LocationSection = () => {
                 <div>
                   <p className="font-semibold text-foreground mb-1">Horário de Atendimento</p>
                   <p className="text-muted-foreground text-sm">Segunda a Sexta: 9h às 18h</p>
-                  <p className="text-muted-foreground text-sm">Sábado: 9h às 13h</p>
                 </div>
               </div>
 
@@ -102,9 +101,6 @@ const LocationSection = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="xl" className="flex-1">
                 Agendar pelo WhatsApp
-              </Button>
-              <Button variant="elegant" size="xl" className="flex-1">
-                Ligar Agora
               </Button>
             </div>
           </div>
