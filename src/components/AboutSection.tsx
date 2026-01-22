@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Award, Heart, Star } from "lucide-react";
-import doctorPortrait from "@/assets/doctor-portrait.jpg";
+import aboutDoctor from "@/assets/about-doctor.png";
 
 const stats = [
   { icon: Award, value: "+10", label: "Anos de Experiência" },
@@ -45,9 +45,9 @@ const AboutSection = () => {
               {/* Main Image */}
               <div className="relative rounded-3xl overflow-hidden shadow-elegant">
                 <img
-                  src={doctorPortrait}
+                  src={aboutDoctor}
                   alt="Dra. Jessica Chen"
-                  className="w-full h-[600px] object-cover"
+                  className="w-full h-[600px] object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 via-transparent to-transparent" />
               </div>
