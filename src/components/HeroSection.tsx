@@ -33,10 +33,10 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center opacity-0 animate-fade-up"
             style={{ animationDelay: "0.6s" }}
           >
-            <Button variant="hero" size="xl">
+            <Button variant="hero" size="default">
               Agendar Consulta
             </Button>
-            <Button variant="elegant" size="xl">
+            <Button variant="elegant" size="default">
               Conhecer Procedimentos
             </Button>
           </div>
