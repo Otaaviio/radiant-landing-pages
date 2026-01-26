@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="mb-6">
               <p className="text-primary/80 text-sm font-sans tracking-widest uppercase mb-1">Dra.</p>
-              <p className="font-serif text-3xl font-light">Jessica Chen</p>
+              <p className="font-serif text-3xl font-light">Marina Razé</p>
             </div>
             <p className="text-background/60 leading-relaxed max-w-md">
               Dermatologista especializada em tratamentos estéticos avançados. 
@@ -30,6 +30,9 @@ const Footer = () => {
               <a href="#results" className="block text-background/60 hover:text-primary transition-colors">
                 Resultados
               </a>
+              <a href="#faq" className="block text-background/60 hover:text-primary transition-colors">
+                FAQ
+              </a>
               <a href="#location" className="block text-background/60 hover:text-primary transition-colors">
                 Localização
               </a>
@@ -40,17 +43,17 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-4">Contato</h4>
             <div className="space-y-3">
-              <a href="tel:+5511999999999" className="flex items-center gap-3 text-background/60 hover:text-primary transition-colors">
+              <a href="https://api.whatsapp.com/send?phone=5511930982272&text=Oi,+gostaria+de+informa%C3%A7%C3%B5es+sobre+a+consulta+com+a+Dra.+J%C3%A9ssica+Razé." target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-background/60 hover:text-primary transition-colors">
                 <Phone className="w-4 h-4" />
-                (11) 99999-9999
+                (11) 93098-2272
               </a>
-              <a href="mailto:contato@drajessicachen.com" className="flex items-center gap-3 text-background/60 hover:text-primary transition-colors">
+              <a href="mailto:contato@draMarinaRazé.com.br" className="flex items-center gap-3 text-background/60 hover:text-primary transition-colors">
                 <Mail className="w-4 h-4" />
-                contato@drajessica.com
+                contato@draMarinaRazé.com.br
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-background/60 hover:text-primary transition-colors">
+              <a href="https://www.instagram.com/dra.MarinaRazé/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-background/60 hover:text-primary transition-colors">
                 <Instagram className="w-4 h-4" />
-                @dra.jessicachen
+                @dra.MarinaRazé
               </a>
               <div className="flex items-start gap-3 text-background/60">
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-1" />
@@ -63,7 +66,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-background/40 text-sm">
-            © {new Date().getFullYear()} Dra. Jessica Chen. Todos os direitos reservados.
+            © {new Date().getFullYear()} Dra. Marina Razé. Todos os direitos reservados.
           </p>
           <p className="text-background/40 text-sm">
             CRM-SP 123456 | RQE 12345

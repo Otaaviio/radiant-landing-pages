@@ -24,21 +24,23 @@ const HeroSection = () => {
             className="font-serif text-5xl md:text-7xl lg:text-8xl font-light text-foreground mb-12 opacity-0 animate-fade-up leading-tight"
             style={{ animationDelay: "0.3s" }}
           >
-            Dra. Jessica
-            <br />
-            <span className="text-gradient-gold font-medium italic">Chen</span>
+                Dra. Marina <span className="text-gradient-gold font-medium italic">Razé</span>
           </h1>
 
           <div 
             className="flex flex-col sm:flex-row gap-4 justify-center items-center opacity-0 animate-fade-up"
             style={{ animationDelay: "0.6s" }}
           >
-            <Button variant="hero" size="default">
-              Agendar Consulta
-            </Button>
-            <Button variant="elegant" size="default">
-              Conhecer Procedimentos
-            </Button>
+            <a href="https://api.whatsapp.com/send?phone=5511930982272&text=Oi,+gostaria+de+informa%C3%A7%C3%B5es+sobre+a+consulta+com+a+Dra.+J%C3%A9ssica+Razé." target="_blank" rel="noopener noreferrer">
+              <Button variant="hero" size="default">
+                Agendar Consulta
+              </Button>
+            </a>
+            <a href="#procedures">
+              <Button variant="elegant" size="default">
+                Conhecer Procedimentos
+              </Button>
+            </a>
           </div>
         </div>
       </div>

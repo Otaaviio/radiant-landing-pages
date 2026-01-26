@@ -128,7 +128,7 @@ const ResultsSection = () => {
             "Eu sei como a acne pode afetar a autoestima. Ver vocês conquistando 
             confiança não tem preço."
           </blockquote>
-          <p className="text-primary font-semibold">— Dra. Jessica Chen</p>
+          <p className="text-primary font-semibold">— Dra. Marina Razé</p>
         </div>
       </div>
     </section>

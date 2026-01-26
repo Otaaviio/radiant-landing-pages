@@ -19,6 +19,7 @@ const Header = () => {
     { label: "Procedimentos", href: "#procedures" },
     { label: "Sobre", href: "#about" },
     { label: "Resultados", href: "#results" },
+    { label: "FAQ", href: "#faq" },
     { label: "Localização", href: "#location" },
   ];
 
@@ -35,7 +36,7 @@ const Header = () => {
           <span className="text-2xl font-serif font-semibold tracking-wide">
             <span className="text-muted-foreground text-sm font-sans tracking-widest uppercase">Dra.</span>
             <br />
-            <span className={isScrolled ? "text-foreground" : "text-background"}>Jessica Chen</span>
+            <span className="text-foreground">Marina Razé</span>
           </span>
         </a>
 
@@ -45,16 +46,16 @@ const Header = () => {
             <a
               key={item.label}
               href={item.href}
-              className={`text-sm font-medium tracking-wide transition-all duration-300 hover:opacity-70 ${
-                isScrolled ? "text-foreground" : "text-background"
-              }`}
+              className="text-sm font-medium tracking-wide transition-all duration-300 hover:opacity-70 text-foreground"
             >
               {item.label}
             </a>
           ))}
-          <Button variant={isScrolled ? "hero" : "heroOutline"} size="lg">
-            Agendar Consulta
-          </Button>
+          <a href="https://api.whatsapp.com/send?phone=5511930982272&text=Oi,+gostaria+de+informa%C3%A7%C3%B5es+sobre+a+consulta+com+a+Dra.+J%C3%A9ssica+Razé." target="_blank" rel="noopener noreferrer">
+            <Button variant={isScrolled ? "hero" : "elegant"} size="lg">
+              Agendar Consulta
+            </Button>
+          </a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -63,9 +64,9 @@ const Header = () => {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? (
-            <X className={`w-6 h-6 ${isScrolled ? "text-foreground" : "text-background"}`} />
+            <X className="w-6 h-6 text-foreground" />
           ) : (
-            <Menu className={`w-6 h-6 ${isScrolled ? "text-foreground" : "text-background"}`} />
+            <Menu className="w-6 h-6 text-foreground" />
           )}
         </button>
       </div>
@@ -84,9 +85,11 @@ const Header = () => {
                 {item.label}
               </a>
             ))}
-            <Button variant="hero" size="xl" className="mt-4">
-              Agendar Consulta
-            </Button>
+            <a href="https://api.whatsapp.com/send?phone=5511930982272&text=Oi,+gostaria+de+informa%C3%A7%C3%B5es+sobre+a+consulta+com+a+Dra.+J%C3%A9ssica+Razé." target="_blank" rel="noopener noreferrer" className="mt-4">
+              <Button variant="hero" size="xl" className="w-full">
+                Agendar Consulta
+              </Button>
+            </a>
           </nav>
         </div>
       )}

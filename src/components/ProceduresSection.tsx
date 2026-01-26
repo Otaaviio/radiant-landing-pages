@@ -24,28 +24,32 @@ const ProceduresSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const currentRef = sectionRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
+          if (currentRef) {
+            observer.unobserve(currentRef);
+          }
         }
       },
       { threshold: 0.2 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
-    return () => observer.disconnect();
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
   }, []);
 
   return (
-    <section
-      id="procedures"
-      ref={sectionRef}
-      className="py-24 md:py-32 gradient-nude relative overflow-hidden"
-    >
+    <section id="procedures" ref={sectionRef} className="py-24 md:py-32 gradient-nude relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-primary/5 blur-3xl" />
       <div className="absolute bottom-0 left-0 w-80 h-80 rounded-full bg-accent/5 blur-3xl" />
@@ -86,8 +90,7 @@ const ProceduresSection = () => {
               }`}
               style={{ animationDelay: `${0.4 + index * 0.15}s` }}
             >
-              <div className="w-16 h-16 rounded-2xl gradient-rose flex items-center justify-center mb-6 shadow-elegant group-hover:scale-110 transition-transform duration-500">
-                <procedure.icon className="w-8 h-8 text-primary-foreground" />
+                                <div className="w-16 h-16 rounded-2xl gradient-rose flex items-center justify-center mb-6 shadow-elegant group-hover:scale-110 transition-transform duration-500">                <procedure.icon className="w-8 h-8 text-primary-foreground" />
               </div>
               
               <h3 className="font-serif text-2xl text-foreground mb-3 group-hover:text-primary transition-colors duration-300">

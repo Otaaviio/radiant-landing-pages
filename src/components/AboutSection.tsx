@@ -46,7 +46,7 @@ const AboutSection = () => {
               <div className="relative rounded-3xl overflow-hidden shadow-elegant">
                 <img
                   src={aboutDoctor}
-                  alt="Dra. Jessica Chen"
+                  alt="Dra. Marina Razé"
                   className="w-full h-auto object-cover object-top rounded-3xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 via-transparent to-transparent" />
@@ -57,7 +57,7 @@ const AboutSection = () => {
                 <p className="font-serif text-lg italic text-foreground mb-2">
                   "Cada pele é única e merece um tratamento personalizado."
                 </p>
-                <p className="text-sm text-primary font-semibold">— Dra. Jessica Chen</p>
+                <p className="text-sm text-primary font-semibold">— Dra. Marina Razé</p>
               </div>
 
               {/* Decorative Ring */}
@@ -72,17 +72,16 @@ const AboutSection = () => {
             </p>
             
             <h2 className="font-serif text-4xl md:text-5xl font-light text-foreground mb-6">
-              Dra. Jessica <span className="italic text-primary">Chen</span>
+              Dra. Marina <span className="italic text-primary">Razé</span>
             </h2>
             
             <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
               <p>
-                Médica Dermatologista formada pela USP, com especialização em 
+                Médica Dermatologista com especialização em 
                 procedimentos estéticos avançados e harmonização facial.
               </p>
               <p>
-                Membro da Sociedade Brasileira de Dermatologia e da Academia 
-                Americana de Dermatologia, com foco em tratamentos personalizados 
+                Com foco em tratamentos personalizados 
                 que respeitam a individualidade de cada paciente.
               </p>
               <p>
